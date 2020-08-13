@@ -1,2 +1,2 @@
 # vue_playground
-Simple Vue Testing Plaground
+Simple Vue Testing Plaground!
