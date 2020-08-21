@@ -13,15 +13,20 @@
 </template>
 
 <script>
+// Standard Imports
 import Vue from 'vue'
 import Buefy from 'buefy'
 import 'buefy/dist/buefy.css'
+
+// Imports de componentes
+import Search_Bar from './components/Search_Bar'
 
 Vue.use(Buefy)
 
 export default {
   name: 'App',
   components: {
+    Search_Bar
   }
 }
 </script>
