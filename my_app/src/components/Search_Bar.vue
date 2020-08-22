@@ -1,10 +1,26 @@
-// Define a new component called button-counter
+<template>
+    <b-field>
+        <b-input v-model="location" placeholder="Type on me, baby!" size="is-large"></b-input>
+    </b-field>
+</template>
 
-Vue.component('button-counter', {
-  data: function () {
-    return {
-      count: 0
-    }
-  },
-  template: '<button v-on:click="count++">You clicked me {{ count }} times.</button>'
-})
+<script>
+// Standard imports
+import Vue from 'vue'
+import Buefy from 'buefy'
+import 'buefy/dist/buefy.css'
+Vue.use(Buefy)
+
+export default {
+    name: 'Search_Bar',
+    props: {
+        location: location
+    },
+    /* data(){ 
+        return {
+            location: location
+        };        
+    } */
+}
+</script>
+

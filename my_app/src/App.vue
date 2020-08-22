@@ -1,45 +1,43 @@
 <template>
   <div id="app">
-    <body>
-		<section class="section">
-			<div class="container">
-				<div class="columns is-centered">
-					<h1 class="title is-1">Vue Playground!</h1>
+	<body>
+		<section class="hero is-fullheight is-light is-bold">
+			<div class="hero-body">
+				<div class="container">
+					<div class="columns is-multiline is-mobile">
+						<div class="column is-half">
+							<h1 class="title is-3">What's the weather like in:</h1>
+							<h2 id="" class="subtitle is-2">{{ location }}</h2>
+						</div>
+						<div class="column is-half">
+							<Search_Bar />
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
-    </body>
+	</body>
   </div>
 </template>
 
 <script>
-// Standard Imports
+// Standard imports
 import Vue from 'vue'
 import Buefy from 'buefy'
 import 'buefy/dist/buefy.css'
+Vue.use(Buefy)
 
 // Imports de componentes
 import Search_Bar from './components/Search_Bar'
 
-Vue.use(Buefy)
-
 export default {
   name: 'App',
   components: {
-    Search_Bar
+	Search_Bar
   }
 }
 </script>
 
 <style>
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
 
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.4;
-  }
 </style>
