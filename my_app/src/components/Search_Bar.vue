@@ -1,6 +1,6 @@
 <template>
     <b-field>
-        <b-input v-model="location" placeholder="Type on me, baby!" size="is-large"></b-input>
+        <b-input name="location" v-model="location" placeholder="Type on me, baby!" size="is-large"></b-input>
     </b-field>
 </template>
 
@@ -14,13 +14,13 @@ Vue.use(Buefy)
 export default {
     name: 'Search_Bar',
     props: {
-        location: location
+        /* location: location */
     },
-    /* data(){ 
+    data(){ 
         return {
-            location: location
+            location: ''
         };        
-    } */
+    }
 }
 </script>
 
